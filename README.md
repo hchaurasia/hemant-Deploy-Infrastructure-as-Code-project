@@ -41,32 +41,19 @@ infrastructure creation using the provided scripts, follow the steps below:
 2. ./create.sh StackName ParameterFile TemplateFile - run create.sh with three parameters(StackName, Parameter and Template files) to create new CF stack
 3. This script creates a new stack with the provided parameters.
 4. Update an existing stack if there are any changes in parameter file(./update.sh StackName ParameterFile TemplateFile)
-5. 
-Use the create.sh script to create a new CloudFormation stack.
-The script requires three parameters (such as StackName, ParameterFile, and TemplateFile). You will need to pass these parameters as per the instructions in the script.
-./create.sh StackName ParameterFile TemplateFile
-
-This script creates a new stack with the provided parameters. Make sure you include IAM capabilities
+5. Deploy a stack - ./deploy.sh StackName ParameterFile TemplateFile
+   
+The deploy.sh script checks if the stack already exists. If it does, the script will update the stack; if it doesn't, it will create a new stack. It very useful for automation like CI/CD pipeline
 
 
 ## Testing
 
-No tests required for this project.
+We can access the Application through DNS url
 
-## Project Instructions
+## Shoudown the infrastructure
 
-1. Design your solution diagram using a tool of your choice and export it into an image file.
+Delete a stack:
+./delete.sh StackName
 
-2. Add all the CloudFormation networking resources and parameters to the `network.yml` and `network-parameters.json` files inside the `starter` folder of this repo.
+Use the delete.sh script to delete a stack. The script only requires one parameter: the name of the stack you wish to delete.
 
-3. Add all the CloudFormation application resources and parameters to the `udagram.yml` and `udagram-parameters.json` files inside the `starter` folder of this repo.
-
-4. Create any required script files to automate spin up and tear down of the CloudFormation stacks.
-
-5. Update the README.md file in the `starter` folder with creation and deletion instructions, as well as any useful information regarding your solution.
-   
-6.  Submit your solution as a GitHub link or a zipped file containing the diagram image, CloudFormation yml and json files, automation scripts and README file.
-
-## License
-
-[License](LICENSE.txt)
