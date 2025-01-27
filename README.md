@@ -31,13 +31,20 @@ We have two stages for this deployment
 
 3. Your favorite IDE or text editor ready to work.
 
-### Installation
+### Infrastructure setup and application deployment 
 
-You can get started by cloning this repo in your local workspace:
+infrastructure creation using the provided scripts, follow the steps below:
 
-```
-git clone git@github.com:udacity/-cd12352-Deploy-Infrastructure-as-Code-project.git
-```
+1. Make the script executable:
+    chmod +x <scripts.sh>
+
+2. run create.sh with three parameters(StackName, Parameter and Template files) to create new CF stack
+Use the create.sh script to create a new CloudFormation stack.
+The script requires three parameters (such as StackName, ParameterFile, and TemplateFile). You will need to pass these parameters as per the instructions in the script.
+./create.sh StackName ParameterFile TemplateFile
+
+This script creates a new stack with the provided parameters. Make sure you include IAM capabilities
+
 
 ## Testing
 
