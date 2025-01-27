@@ -8,11 +8,21 @@ In this project, you’ll deploy web servers for a highly available web app usin
 ![Infra-diagram](https://github.com/user-attachments/assets/62555c18-3e33-41c7-9181-5baf2c45958f)
 
 
-## Infrastructure overview
+## Infrastructure Overview
 
 This project uses CloudFormation to provision the following resources:
-VPC with public and private subnets
+1. VPC with public and private subnets
+2. NatGatways, InternetGatway, Routable
+3. LB for HTTP/HTTPS traffic
+4. IAM roles and policies
+5. EC2 for Web Application
+   
+We have two stages for this deployment 
 
+   1. Network configuration by network team
+   2. Application setup by DevOps team
+
+      
 ### Dependencies
 
 1. AWS CLI installed and configured in your workspace using an AWS IAM role with Administrator permissions (as reviewed in the course).
