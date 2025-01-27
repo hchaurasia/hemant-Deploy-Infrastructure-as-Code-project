@@ -48,7 +48,8 @@ The deploy.sh script checks if the stack already exists. If it does, the script 
 
 ## Testing
 
-We can access the Application through DNS url - https://latest-webap-utc8re0nxik3-1108919066.us-east-1.elb.amazonaws.com/
+We can access the Application through DNS url - http://udacit-webap-igb3jrkeujvh-1389014971.us-east-1.elb.amazonaws.com/
+
 
 ## Shoudown the infrastructure
 
