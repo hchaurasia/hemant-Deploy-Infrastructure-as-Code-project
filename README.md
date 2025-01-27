@@ -38,7 +38,10 @@ infrastructure creation using the provided scripts, follow the steps below:
 1. Make the script executable:
     chmod +x <scripts.sh>
 
-2. run create.sh with three parameters(StackName, Parameter and Template files) to create new CF stack
+2. ./create.sh StackName ParameterFile TemplateFile - run create.sh with three parameters(StackName, Parameter and Template files) to create new CF stack
+3. This script creates a new stack with the provided parameters.
+4. Update an existing stack if there are any changes in parameter file(./update.sh StackName ParameterFile TemplateFile)
+5. 
 Use the create.sh script to create a new CloudFormation stack.
 The script requires three parameters (such as StackName, ParameterFile, and TemplateFile). You will need to pass these parameters as per the instructions in the script.
 ./create.sh StackName ParameterFile TemplateFile
