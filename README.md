@@ -48,7 +48,7 @@ The deploy.sh script checks if the stack already exists. If it does, the script 
 
 ## Testing
 
-We can access the Application through DNS url
+We can access the Application through DNS url - https://latest-webap-utc8re0nxik3-1108919066.us-east-1.elb.amazonaws.com/
 
 ## Shoudown the infrastructure
 
@@ -56,4 +56,6 @@ Delete a stack:
 ./delete.sh StackName
 
 Use the delete.sh script to delete a stack. The script only requires one parameter: the name of the stack you wish to delete.
+
+
 
